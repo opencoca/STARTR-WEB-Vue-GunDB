@@ -1,6 +1,6 @@
-# test-project
+# Vue-GunDB
 
-> A Vue.js project
+> A Vue.js GunDB project
 
 ## Build Setup
 
