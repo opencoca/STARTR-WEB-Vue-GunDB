@@ -1,12 +1,15 @@
 <template>
   <div class="hello">
     <h1>Gun DB Test</h1>
-    <li v-for="(recipe, index) in recipes" v-bind:key="index">
+    <li
+      v-for="(recipe, index) in recipes"
+      v-if="recipe !== null"
+      v-bind:key="index"
+    >
       {{ recipe }}
       <button @click="deleteItem(index)">delete</button>
     </li>
 
-    <br />
     <br />
 
     <input type="text" v-model="newRecipe" v-on:keyup.enter="add(newRecipe)" />
@@ -31,17 +34,16 @@ export default {
       this.recipes_node.set(newRecipe);
     },
     deleteItem(index) {
-      this.recipes_node.once(function (node) {
-        console.log(node);
-      });
-      console.log(this.recipes);
+      var key = Object.keys(this.recipes_node._.put)[index + 1];
+      console.log(key);
+      this.recipes_node.get(key).put(null);
+      this.recipes.splice(index, 1); // place a null value and splice the vue list
     },
   },
 
   mounted() {
     this.recipes_node.map().on((node, key) => {
-      //this.recipes.push(node);
-      this.recipes[key] = node;
+      this.recipes.push(node);
     });
   },
 };
@@ -58,7 +60,7 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
+  /*display: block;*/
   margin: 0 10px;
 }
 a {
