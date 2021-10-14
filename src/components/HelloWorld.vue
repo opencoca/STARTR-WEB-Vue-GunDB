@@ -1,14 +1,16 @@
 <template>
   <div class="hello">
     <h1>Gun DB Test</h1>
-    <li
-      v-for="(recipe, index) in recipes"
-      v-if="recipe !== null"
-      v-bind:key="index"
-    >
-      {{ recipe }}
-      <button @click="deleteItem(index)">delete</button>
+    <ol>
+      <li
+        v-for="(recipe, index) in recipes"
+        v-if="recipe !== null"
+        v-bind:key="index"
+      >
+        {{ recipe }} 
+        <button @click="deleteItem(index)">delete</button>
     </li>
+    </ol>
 
     <br />
 

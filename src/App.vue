@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img width="10%" src="./assets/logo.png" />
+    <img width="10%" src="./assets/logo.png" alt="Ansia Logo" />
     <HelloWorld />
   </div>
 </template>
