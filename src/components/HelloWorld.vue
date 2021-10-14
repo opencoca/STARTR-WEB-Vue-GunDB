@@ -14,6 +14,7 @@
 
     <input type="text" v-model="newRecipe" v-on:keyup.enter="add(newRecipe)" />
     <button @click="add(newRecipe)">Add</button>
+    <button @click="syncList">Sync</button>
   </div>
 </template>
 
@@ -38,6 +39,13 @@ export default {
       console.log(key);
       this.recipes_node.get(key).put(null);
       this.recipes.splice(index, 1); // place a null value and splice the vue list
+    },
+    syncList() {
+      this.recipes.splice(1, length(index));
+      //this.recipes = ""
+      this.recipes_node.map().on((node, key) => {
+        this.recipes.push(node);
+      });
     },
   },
 
