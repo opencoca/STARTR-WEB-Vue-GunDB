@@ -1,12 +1,13 @@
 # Vue-GunDB
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Foyqze.csb.app%2F)](https://oyqze.csb.app/) Try it out at https://oyqze.csb.app or hack away at https://github.dev/opencoca/Vue-GunDB/
+We have our demo [![Website](https://img.shields.io/website?url=https%3A%2F%2Foyqze.csb.app%2F)](https://oyqze.csb.app/)! So try it out at https://oyqze.csb.app or have fun and hack away on
+[codesandbox.io](https://codesandbox.io/s/github/opencoca/Vue-GunDB) or [github.dev](https://github.dev/opencoca/Vue-GunDB/)
 
 [![Run on Repl.it](https://repl.it/badge/github/opencoca/Vue-GunDB)](https://repl.it/github/opencoca/Vue-GunDB) [![Run on https://codesandbox.io/](https://rawcdn.githack.com/opencoca/lt2d_school/acb65df441a1f73e00b29e0d78ccb6dd5fbce514/public/assets/codesandbox.svg)](https://codesandbox.io/s/github/opencoca/Vue-GunDB)
 
 > A Vue.js GunDB project
 
-## Build Setup
+## Build and Setup localy :D
 
 ``` bash
 # install dependencies
